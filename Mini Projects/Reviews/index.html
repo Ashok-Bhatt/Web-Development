@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Our reviews</h1>
+        <div id="inner-container">
+            <div id="review-box">
+                <div id="profile">
+                    <img src="images/loganPaul.jpg" alt="Profile-photo of reviewer" class="profile-photo">
+                    <div id="profile-description">
+                        <span class="profile-name">Logan Paul</span>
+                        <span class="profile-occupation">YouTuber, Wrestler, Boxer</span>
+                    </div>
+                </div>
+                <div id="review">
+                    Ashok is such a great personality. I wish I could donate my all 30+ million subscribers to him. He really deserves to work in faang companies.
+                </div>
+            </div>
+            <div id="button-container">
+                <div>
+                    <button id="previous" class="sliding-buttons" onclick="show_review(previous_review)"><</button>
+                    <button id="forward" class="sliding-buttons" onclick="show_review(next_review)">></button>
+                </div>
+                <button id="surprise" onclick="show_review(random_review)">Surprise Me</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

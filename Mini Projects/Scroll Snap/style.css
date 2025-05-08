@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    scroll-margin-top: 30px;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}

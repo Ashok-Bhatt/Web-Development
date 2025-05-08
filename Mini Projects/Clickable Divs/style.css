@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+
+.ball{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+}
+
+.ball-1{
+    background-color: red;
+}
+
+.ball-2{
+    background-color: green;
+}
+
+.ball-3{
+    background-color: blue;
+}

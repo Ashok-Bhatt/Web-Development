@@ -3,6 +3,13 @@
 AWD Practicals/SET 2
 AJAX
 
-#Excluding some folder structures
-Express/**/node_modules
+# Excluding some folder structures
+node_modules
 **/.vscode
+
+# Excluding some files
+Node/**/*.txt
+Node/**/*.txt.gz
+Mini Projects/**/*.csv
+Mini Projects/**/*.txt
+Mini Projects/Advanced Border Radius/ashok.jpg

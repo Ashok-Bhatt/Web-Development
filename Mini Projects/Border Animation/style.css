@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: aliceblue;
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px 100px;
+    padding: 25px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.box{
+    background-color: cornflowerblue;
+    height: 250px;
+    width: 150px;
+}
+
+.box-1::before{
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 150px;
+    background-color: red;
+    inset: 10px;
+    z-index: 10;
+}

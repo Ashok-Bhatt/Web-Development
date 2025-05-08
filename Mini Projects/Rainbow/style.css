@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#violet{
+    height: 500px;
+    width: 500px;
+    background-color: violet;
+}
+
+#indigo{
+    height: 450px;
+    width: 450px;
+    background-color: indigo;
+}
+
+#blue{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}
+
+#green{
+    height: 350px;
+    width: 350px;
+    background-color: green;
+}
+
+#yellow{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+}
+
+#orange{
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+}
+
+#red{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+div div{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

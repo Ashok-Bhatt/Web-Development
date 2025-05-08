@@ -1,0 +1,26 @@
+
+html{
+    scrollbar-color: #666 #999;
+    scrollbar-width: thin;
+}
+
+
+/* 
+html::-webkit-scrollbar{
+    scrollbar-width: 1vw;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: yellow;
+}
+ */
+
+
+body{
+    background-color: #333;
+    color: #ccc;
+}

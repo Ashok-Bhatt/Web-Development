@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #ddd;
+}
+
+#container{
+    margin: 50px auto;
+    padding: 10px 25vw;
+    text-align: center;
+}
+
+#inner-container{
+    height: 500px;
+    width: 800px;
+    background-color: white;
+    box-shadow: #888 5px 5px 10px;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+#review-box{
+    height: 400px;
+    margin-top: 30px;
+}
+
+img{
+    height:200px;
+    width:200px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+
+.profile-name{
+    display: block;
+    font-size: 2rem;
+}
+
+.profile-occupation{
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(17, 181, 236);
+}
+
+#review{
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+#button-container{
+    margin-top: 25px;
+}
+
+.sliding-buttons{
+    border: 0px;
+    background-color: white;
+    font-size: 1.5rem;
+    color: lightblue;
+}
+
+.sliding-buttons:hover{
+    background-color: lightblue;
+    color: white;
+}
+
+#surprise{
+    background-color: #0fa0ee;
+    border-radius: 5px;
+    font-weight: bolder;
+}

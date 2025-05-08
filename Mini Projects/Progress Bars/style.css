@@ -1,0 +1,18 @@
+
+#main-container{
+    background-color: #00ff00;
+    height: 50px;
+    width: 90%;
+    border: 5px solid black;
+    margin: 20px auto;
+    display: flex;
+    justify-content: right;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progress{
+    background-color: red;
+    height: 50px;
+    width: 0%;
+}

@@ -1,0 +1,18 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 155, 155);
+}
+
+.centered-div {
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    text-align: center;
+    line-height: 300px;
+}

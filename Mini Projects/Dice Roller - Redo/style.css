@@ -1,0 +1,32 @@
+
+h1{
+    text-align: center;
+}
+
+#container{
+    text-align: center;
+}
+
+#dice{
+    height: 200px;
+}
+
+#diceFigure{
+    font-size: 90px;
+}
+
+#diceText{
+    font-size: 30px;
+}
+
+#btn1{
+    height:100px;
+    width: 100px;
+    margin: 100px;
+    font-size: 50px;
+}
+
+#btn1:hover{
+    font-size: 60px;
+}
+

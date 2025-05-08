@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+}
+
+#container{
+    margin: 100px auto;
+    height: 300px;
+}
+
+#text{
+    text-align: center;
+}
+
+#counter{
+    font-size: 3rem;
+}
+
+.button-container{
+    text-align: center;
+    margin-top:50px;
+}
+
+.btn{
+    margin: 0px 20px;
+    font-size: 20px;
+    border-radius : 5px;
+}

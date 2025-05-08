@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #333;
+        }
+
+        #image-container{
+            height: 300px;
+            width: 300px;
+            border: 2px solid white;
+            box-shadow: #ccc 5px;
+            background-image: url("images//pikachu.png");
+            background-size: cover;
+            animation: carousal 5s linear infinite;
+        }
+
+        @keyframes carousal {
+            0%{background-image: url("images//pikachu.png");}
+            25%{background-image: url("images//lucario.png");}
+            50%{background-image: url("images//charizard.png");}
+            75%{background-image: url("images//garchomp.png");}
+            100%{background-image: url("images//magikarp.png");}
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container"></div>
+</body>
+</html>

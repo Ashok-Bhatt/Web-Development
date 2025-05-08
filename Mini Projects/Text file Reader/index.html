@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading text file</title>
+</head>
+<body>
+    <button id="generate-btn">Read file</button>
+    <div class="file-text"></div>
+    <script>
+
+        const generateBtn = document.getElementById("generate-btn");
+        const fileContainer = document.querySelector(".file-text");
+        const fileList = ["info.txt", "data.csv"];
+        let clickNo = 0;
+        let n = fileList.length;
+        
+        generateBtn.addEventListener("click", ()=>{
+
+            const http = new XMLHttpRequest();
+            http.open("POST", fileList[clickNo%n], true);
+            
+            http.onload = ()=>{
+                if (http.status=200){
+                    let response = http.response;
+                    let modifiedResponse = "";
+                    for (let i=0; i<response.length; i++){
+                        if (response.charCodeAt(i) == 10){
+                            modifiedResponse += "<br>";
+                        } else {
+                            modifiedResponse += response[i];
+                        }
+                    }
+                    fileContainer.innerHTML = response;
+                }
+            }
+
+            http.send();
+            clickNo++;
+        });
+
+    </script>
+</body>
+</html>

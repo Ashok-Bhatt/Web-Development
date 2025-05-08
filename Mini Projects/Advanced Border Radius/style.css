@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #333;
+}
+
+.image-container{
+    background-color: antiquewhite;
+    border: 2px solid wheat;
+    border-radius: 21% 79% 21% 79% / 79% 21% 79% 21%;
+}
+
+img{
+    height: 60vh;
+    width: auto;
+    border-radius: 21% 79% 21% 79% / 79% 21% 79% 21%;
+}
