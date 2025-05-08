@@ -1,0 +1,10 @@
+{
+    "name" : "Ashok Bhatt",
+    "age" : 18,
+    "location" : {
+        "country" : "India",
+        "state" : "Gujarat",
+        "district" : "Vadodara",
+        "village" : "Bajwa"
+    }
+}
