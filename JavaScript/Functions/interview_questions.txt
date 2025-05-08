@@ -1,0 +1,5 @@
+1. Difference between function arguments and parameters ? 
+
+---> The values passed with function call are called function arguments.
+     Function parameters are present within function defination.
+

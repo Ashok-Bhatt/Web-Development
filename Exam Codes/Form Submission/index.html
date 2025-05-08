@@ -1,0 +1,23 @@
+<!-- write a HTML code to create a form having entry fields having first name, last name and submit button . on submit it should validate form (using js) and should add info to database using php -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="myForm" action="store.php" method="POST" onsubmit="return validateForm()">
+        <label>
+            First Name <input type="text" id="firstname" name="firstname">
+        </label>
+        <label>
+            Last Name <input type="text" id="lastname" name="lastname">
+        </label>
+        <input type="submit" id="submit-btn" value="Submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 10px;
+    width: 300px;
+}
+
+form{
+    margin-top: 30px;;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#submit-btn{
+    width: 100px;
+}

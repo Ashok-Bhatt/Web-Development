@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/012eb59c28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Product Inventory System</h2>
+    <div class="main-container">
+        <form action="" name="my-form" id="my-form">
+            <div class="form-details">
+                <div class="form-detail">
+                    <label for="product-name">Name</label>
+                    <input type="text" name="product-name" id="product-name" placeholder="Product Name">
+                </div>
+                <div class="form-detail">
+                    <label for="product-price">Price</label>
+                    <input type="text" name="product-price" id="product-price" placeholder="Product Price">
+                </div>
+                <div class="form-detail">
+                    <label for="product-brand">Brand</label>
+                    <input type="text" name="product-brand" id="product-brand" placeholder="Product Brand">
+                </div>
+                <div class="form-detail">
+                    <label for="product-quantity">Quantity</label>
+                    <input type="text" name="product-quantity" id="product-quantity" placeholder="Product Quantity">
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="add-btn">Add</button>
+            </div>
+        </form>
+        <div class="product-info">
+            <div class="table-heading">
+                <h3>Product Details</h3>
+            </div>
+            <div class="product-details">
+                <div class="product-count">
+                    <p>Product Count: <span>0<span></p>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="hide">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th>Product Brand</th>
+                            <th>Product Quantity</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="message hidden-message">
+                    NO DATA AVAILABLE
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "data-models-practice",
+  "version": "1.0.0",
+  "description": "just a practice work for data modelling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashok Bhatt",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.10.1"
+  }
+}

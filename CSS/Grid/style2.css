@@ -1,0 +1,35 @@
+body{
+    background-color: #ccc;
+}
+
+.container{
+    height: 400px;
+    width: 400px;
+    margin: 100px;
+    border: 5px solid black;
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1px 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    background-color: white;
+    justify-content: start;
+    align-content: start;
+}
+
+.item{
+    border: 8px solid rgb(222, 58, 85);
+    background-color: rgb(226, 99, 120);
+    color: white;
+    min-height: 30px;
+}
+
+/* 
+.item-1{
+    justify-self: start;
+    align-self: stretch;
+} */
+

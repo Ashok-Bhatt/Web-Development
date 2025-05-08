@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Check</title>
+    <script>
+        function prime_check() {
+            let num=Number.parseInt(document.getElementById("number").value);
+            if (num<=0){
+                document.getElementById("prime").innerHTML="The concept of prime number is not applicable to 0 or negative numbers.";
+            }
+            else if (num==1){
+                document.getElementById("prime").innerHTML="1 is neither a prime number nor a composite number. It is a special number.";
+            }
+            else{
+                for (let i=2; i<=num; i++){
+                    if (num%i==0 && num!=i){
+                        document.getElementById("prime").innerHTML=num+" is a composite number.";
+                        break
+                    }
+                    else if (num==i){
+                        document.getElementById("prime").innerHTML=num+" is a prime number number.";
+                    }
+                    else{
+                        continue
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="num">Enter the number:</label><br>
+        <input type="text" placeholder="Enter the number" id="number" name="number"><br><br>
+        <input type="button" value="Click" onclick="prime_check()">
+        <button type="reset">Reset</button><br>
+        <p id="prime"></p>
+    </form>
+</body>
+</html>

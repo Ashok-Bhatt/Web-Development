@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border: 5px solid blueviolet;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        #ball1 {
+            background-color: red;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-name: bounce1;
+        }
+
+        #ball2 {
+            background-color: blue;
+            top: 50%;
+            animation-name: bounce2;
+        }
+
+        #shock-wave{
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            border: 1px solid orange;
+            border-radius: 50%;
+        }
+
+        @keyframes bounce1 {
+            0%, 100% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 350px;
+            }
+        }
+
+        @keyframes bounce2 {
+            0%, 100% {
+                left: 0;
+            }
+            50% {
+                left: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="ball1" class="ball"></div>
+        <div id="ball2" class="ball"></div>
+    </div>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        const ball1 = $('#ball1');
+        const ball2 = $('#ball2');
+        const container = $('.container');
+        let isWaveGenerated = false;
+        let waveElement;
+        let waveRange = 0;
+        let generateWave;
+
+        function checkCollision() {
+            var ball1Pos = ball1.position();
+            var ball2Pos = ball2.position();
+
+            var dx = ball1Pos.left + ball1.width() / 2 - (ball2Pos.left + ball2.width() / 2);
+            var dy = ball1Pos.top + ball1.height() / 2 - (ball2Pos.top + ball2.height() / 2);
+            var distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < ball1.width() / 2 + ball2.width() / 2) {
+                if (!isWaveGenerated){
+                    waveElement = $('<div id="shock-wave"></div>');
+                    container.append(waveElement);
+                    isWaveGenerated = true;
+                    generateWave = setInterval(()=>{
+                        waveRange = waveRange + 0.1;
+                        waveElement.css({
+                            "transform" : `scale(${waveRange})`,
+                        })
+                        if (waveRange>50){
+                            waveRange = 0;
+                            clearInterval(generateWave);
+                            $(waveElement).remove();
+                            isWaveGenerated = false;
+                        }
+                    }, 5)
+                }
+            }
+        }
+
+        setInterval(checkCollision, 50);
+    });
+    </script>
+</body>
+</html>

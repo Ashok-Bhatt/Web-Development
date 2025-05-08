@@ -1,0 +1,24 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card{
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    border: 1 px solid #000;
+}
+
+tr th, tr td{
+    border: 1px solid #ddd;
+    width: 20%;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+}

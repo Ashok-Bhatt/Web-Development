@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript loops</title>
+</head>
+<body>
+    <script>
+        // while loop
+        var x=1;
+        document.write("The first 10 natural numbers:")
+        while(x<=10){
+            document.write(x+" ")
+            x++
+        }
+
+        // do while loop
+        var i=11;       // i out of range but do while loop would still execute the expression atleast once //
+        document.write("<br>"+"The first even number after 20 is:")
+        do{
+            result=2*i
+            document.write(result+" ")
+            i++
+        }
+        while(i<=10)
+
+        // for loop
+        var count;
+        document.write("<br>"+"The first five numbers are:")
+        for (count=1;count<=5;count++){
+            document.write(count+" ")
+        }
+
+        //for in loop
+        var x="Ashok";
+        document.write("<br>"+"The letter in word Ashok are:")
+        for (i in x){
+            document.write(x[i]+",")
+        }
+    </script>
+</body>
+</html>

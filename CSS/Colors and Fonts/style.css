@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+p{
+    font-family: 'Babylonica', cursive;
+    font-style: italic;
+}
+#p1{
+    color: antiquewhite;
+}
+
+#p2{
+    color: rgb(178, 94, 94);
+}
+
+#p3{
+    color: rgb(53, 29, 191);
+}
+
+#p4{
+    color:#52a638;
+}
+
+#p5{
+    color: hsl(321, 82%, 43%);
+}

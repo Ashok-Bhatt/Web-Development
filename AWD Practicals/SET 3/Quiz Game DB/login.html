@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="toggle-container">
+            <button class="login-container option">LOGIN</button>
+            <button class="signIn-container option">SIGN IN</button>
+            <button class="high-scores option">SCORES</button>
+        </div>
+        <form id="myForm">
+            <div class="entry-container">
+                <div class="name-field field">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="password-field field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="confirm-field field hidden-component">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" name="confirm" id="confirm">
+                </div>
+            </div>
+            <div class="btn-container">
+                <button id="login-btn">LOGIN</button>
+                <button id="signIn-btn" class="hidden-component">SIGN IN</button>
+            </div>
+            <div class="score-container hidden-component">
+                <div class="header">
+                    <div class="usernameHeader">Username</div>
+                    <div class="highScoreHeader">Money Won</div>
+                </div>
+                <div class="entries">
+                    <div class="entry">
+                        <div class="usernameEntry">Ashok</div>
+                        <div class="highScoreEntry">16000 $</div>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

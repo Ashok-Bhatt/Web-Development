@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a=12;       // Global Variable //
+        var b;          // Variable initialization can be done further //
+        document.write("The value of a is "+ a + "<br>")
+        b=10;
+        add=a+b;        // It's compulsory to define a variable which holds a result of two variables before executing the result //
+        document.write("The addition of a and b is given by "+ add + "<br>")
+        b=100;
+        document.write(b + "<br>")
+        let c= 100;
+        document.write(c+ "<br>")
+        c=1000;
+        d=14;
+        document.write(c+ "<br>")
+        document.write(d+ "<br>")
+        const pi = 3.14;        // Global variable //
+        document.write("The value of pi is "+ pi + "<br>")
+        {
+            // Local Variable has higher scope than global variable.//
+            let pi = 1.41;      // Local variable that's why the const can be assigned again //
+            document.write(pi + "<br>")
+            pi= 1;
+            document.write(pi+ "<br>")
+            document.write(c)   // executes global variable in case of no local variable //
+        }
+    </script>
+</body>
+</html>

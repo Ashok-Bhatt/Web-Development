@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipuationt</title>
+    <style>
+        .btn{
+            display: block;
+        }
+    </style>
+
+    <script>
+
+        function changeHeading(){
+            document.getElementById("p1").innerHTML = "Changed Text";
+        }
+
+        function generateTable(){
+            text = "";
+            for (let i=1; i<=10; i++){
+                text = text + `${5} X ${i} = ${5*i} </br>`;
+            }
+            document.getElementById("p1").innerHTML = text;
+        }
+
+        function changeColor(){
+            let paragraph = document.getElementById("p1");
+            let color = paragraph.style.backgroundColor;
+            if (color=="red"){
+                paragraph.style.backgroundColor = "white";
+                paragraph.style.color = "black";
+            } else {
+                paragraph.style.backgroundColor = "red";
+                paragraph.style.color = "white";
+            }
+        }
+        
+        // using querySelector
+        function changeButton(){
+            let b = document.querySelector('button');
+            b.style.backgroundColor = "black";
+            b.style.color = "white";
+        }
+
+        // using getElementByClassName
+        function changeButtonText(){
+            let b = document.getElementsByClassName("btn");
+            console.log(b);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p id="p1" style="display: inline-block;">This is paragraph</p>
+    <button onclick="generateTable()" class="btn">Generate Table</button>
+    <button onclick="changeColor()" class="btn">Change Color</button>
+    <button onclick="changeHeading()" class="btn">Change Heading</button>
+    <button onclick="changeButton()" class="btn">Change Button Color</button>
+    <button onclick="changeButtonText()" class="btn">Change Button Text</button>
+</body>
+</html>

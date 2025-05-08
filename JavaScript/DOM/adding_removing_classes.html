@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding and Removing Classes</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 400px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-family: monospace;
+        }
+
+        .container:hover{
+            background-color: bisque;
+        }
+
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Hello Ashok
+    </div>
+    <button class="btn">Click Me</button>
+    <script>
+        let hiddenContainer = false;
+        const Button = document.querySelector(".btn");
+        const Container = document.querySelector(".container");
+
+        Button.addEventListener("click", ()=>{
+            if (hiddenContainer){
+                Container.classList.remove("hidden");
+            } else{
+                Container.classList.add("hidden");
+            }
+            hiddenContainer = !hiddenContainer;
+        })
+    </script>
+</body>
+</html>

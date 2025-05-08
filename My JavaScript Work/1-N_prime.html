@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime numbers from 1 to N</title>
+    <script>
+        function prime(){
+            var n=document.myform.n.value;
+            n=parseInt(n);
+            var notPrime=false;
+            for (var counter = 0; counter <= n; counter++){
+                for (var i = 2; i <= counter; i++) {
+                    if (counter%i===0 && i!==counter) {
+                    notPrime = true;
+                    }
+                }
+            }
+            if (notPrime === false) {
+                x=counter;
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <h1 style="text-align:center;">Prime numbers from 1 to N</h1>
+        <label for="n">Enter the number:</label>
+        <input type="text"name="n"value="">
+        <input type="button"value="check"onclick="prime()"id="check"name="check">
+    </form>
+    <br>
+    <p id="demo"></p>
+</body>
+</html>

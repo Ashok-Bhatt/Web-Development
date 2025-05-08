@@ -1,0 +1,8 @@
+
+# Excluding some folders
+AWD Practicals/SET 2
+AJAX
+
+#Excluding some folder structures
+Express/**/node_modules
+**/.vscode

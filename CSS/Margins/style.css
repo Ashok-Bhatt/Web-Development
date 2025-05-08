@@ -1,0 +1,13 @@
+#p1{
+    margin: 25px;
+    height : 200px;
+    width: 200px;
+    background-color: red;
+}
+
+#p2{
+    margin-left: auto;
+    height : 200px;
+    width: 200px;
+    background-color: blue;
+}

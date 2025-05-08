@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    padding: 100px 100px;
+}
+
+.left-view, .right-view{
+    border: 1px solid black;
+}
+
+.left-view{
+    background-image: url("images/boat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    display: flex;
+    color: cyan;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px 20px;
+    gap: 5px 0px;
+}
+
+.left-view h4{
+    font-size: 2rem;
+}
+
+.left-view p{
+    font-size: 1.3rem;
+}
+
+.right-view{
+    width: 40%;
+    padding: 25px 20px;
+    background-color: rgb(29, 40, 55);
+    color: white;
+}
+
+.right-view form{
+    height: 100%;
+}
+
+.right-view form fieldset{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+.right-view input[type="text"]{
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 5px solid rgb(68, 77, 89);
+}
+
+.right-view button{
+    background-color: rgb(3, 251, 169);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 5px 30px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.right-view .login-options{
+    border: 1px solid rgb(141, 138, 138);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.right-view .login-options .login-symbol{
+    font-display: flex;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.right-view .login-options .login-symbol i{
+    padding: 0px 20px;
+    font-size: 2rem;
+}
+
+.right-view a{
+    text-decoration: none;
+    color: white;
+}

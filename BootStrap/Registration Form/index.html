@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container d-flex align-item-center mt-2">
+        <div class="card">
+            <h1 class="text-center">Welcome to Registration</h1>
+            <form id="registrationForm">
+                <div class="col">
+                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                </div>
+                <br>
+                <div class="col">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <br>
+                <div class="col">
+                    <input type="text" class="form-control" id="contact" inputmode="numeric" placeholder="Contact no" required>
+                </div>
+                <br>
+                <div class="col">
+                    <input type="password" class="form-control" id="password" placeholder="password" required>
+                </div>
+                <div class="col">
+                    <br>
+                    <textarea col="100" rows="4" class="form-control" id="comment" placeholder="Enter your comments" required></textarea>
+                </div>
+                <div class="text-center">
+                    <div class="button">
+                        <br>
+                        <button type="button" class="btn btn-success" id="register-btn">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container my-2">
+            <table id="userDataTable">
+                <thead>
+                    <tr>
+                        <th>Serial No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile No.</th>
+                        <th>Comment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Practice</title>
+</head>
+<body>
+    <h1>This is my website</h1>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <div style="height: 100px; width: 100px; background-color: red;"></div>
+</body>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<script>
+
+    // $ is shorthand for jQuery
+    // console.log(jQuery);
+    // console.log($);
+
+    // All <p> will be deleted
+    $("h1").click(function(){
+        console.log("clicked!");
+        $("p").hide();
+    })
+
+    // Clicked p will be deleted
+    $("p").click(function(){
+        console.log("clicked!");
+        $(this).hide();
+    })
+
+    $("div").click(function(){
+        console.log("Mouse hovered over the red container.");
+        $(this).fadeIn(3000, function(){
+            console.log("fade in bha gao!");
+        });
+    })
+
+</script>
+</html>

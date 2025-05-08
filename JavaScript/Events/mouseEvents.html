@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+<body>
+    <div class="container">
+        <p id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti mollitia cum, perspiciatis officia doloribus harum voluptatum consequatur. Tempore laborum modi vel repudiandae quae deserunt expedita minus aliquid minima, excepturi molestias, dolorum perspiciatis qui sed architecto, veritatis quidem quia. Facilis at voluptate explicabo. Commodi tempora, aperiam beatae voluptate vel deleniti tenetur esse, sit illo rem nihil quod modi facilis distinctio totam earum ad repudiandae illum voluptatibus ipsam quaerat neque adipisci! Voluptatem alias quia saepe distinctio. Voluptate quibusdam, modi nulla voluptatum suscipit provident dolor harum labore placeat ex aut magnam dicta sed deserunt, numquam, itaque laboriosam cum quia exercitationem cupiditate? Facere, voluptas.</p>
+        <div id="sub-container" style="height: 100px; width: 100px; background-color: aliceblue;"></div>
+        <button id="btn">Click Me</button>
+    </div>
+
+    <script>
+        const btn1 = document.getElementById("btn");
+        const para1 = document.getElementById("paragraph");
+        const div1 = document.getElementById("sub-container");
+
+        btn1.addEventListener("mousedown", ()=>{
+            para1.style.backgroundColor = "red";
+        })
+
+        btn1.addEventListener("mouseup", ()=>{
+            para1.style.backgroundColor = "white";
+        })
+
+        btn1.addEventListener("mouseenter", ()=>{
+            para1.style.fontWeight = "bolder";
+            div1.style.backgroundColor = "green";
+        })
+
+        btn1.addEventListener("mouseleave", ()=>{
+            para1.style.fontWeight = "normal";
+            div1.style.backgroundColor = "blue";
+        })
+    </script>
+</body>
+</html>

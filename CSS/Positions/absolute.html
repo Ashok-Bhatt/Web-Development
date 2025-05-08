@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container{
+            background-color: lightgreen;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+
+        .ball{
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+        }
+
+        .ball-1{
+            background-color: lightcoral;
+            top: 50px;
+            left: 50px;
+        }
+
+        .ball-2{
+            background-color: lightblue;
+            top: 150px;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="ball ball-1"></div>
+        <div class="ball ball-2"></div>
+    </div>
+</body>
+</html>

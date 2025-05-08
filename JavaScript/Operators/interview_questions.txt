@@ -1,0 +1,6 @@
+1. Difference between == and === ?
+
+---> var num1 = 5;
+     var num2 = "5";
+     console.log(num1 == num2)     // true      (checks only value)
+     console.log(num1 === num2)    // false     (checks value as well as data type)

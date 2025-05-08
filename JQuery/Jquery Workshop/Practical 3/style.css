@@ -1,0 +1,23 @@
+.container{
+    border: 1px solid #888888;
+    padding: 25px;
+}
+
+.myclass{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+}
+
+.mybtn{
+    padding: 10px;
+    background-color: crimson;
+    color: #efffff;
+    border: none;
+    cursor: pointer;
+}

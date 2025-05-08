@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="game-section">
+            <header>
+                <h1>WHO WANTS TO BE A MILLIONER?</h1>
+                <div class="won-money">
+                    <p>0 ₹</p>
+                </div>
+            </header>
+            <div class="question-options">
+                <div class="question-container">
+                    <div class="timer">
+                        <div class="inner-timer"></div>
+                    </div>
+                    <div class="question"></div>
+                    <div class="time-slider">
+                        <div class="time-passed"></div>
+                    </div>
+                </div>
+                <div class="options-container">
+                        <button class="option" id="option-1"></button>
+                        <button class="option" id="option-2"></button>
+                        <button class="option" id="option-3"></button>
+                        <button class="option" id="option-4"></button>
+                </div>
+                <div class="progress-options">
+                    <button id="lock-btn">LOCK</button>
+                    <button id="next-btn">START</button>
+                    <button id="quit-btn">QUIT</button>
+                </div>
+            </div>
+        </div>
+        <div class="level-section">
+            <div class="life-lines">
+                <button class="life-line" id="doubleDip" title="double dip">
+                    <img src="images/double_dip.png" alt="image of double dip life line">
+                </button>
+                <button class="life-line" id="fiftyFifty" title="50:50">
+                    <img src="images/50_50.png" alt="image of 50:05 life line">
+                </button>
+                <button class="life-line" id="skipTheQuestion" title="flip the question">
+                    <img src="images/flip_the_question.png" alt="image of flip the question life line">
+                </button>
+                <button class="life-line" id="jumpTheQuestion" title="jump the question">
+                    <img src="images/jump_the_question.png" alt="image of jump the question life line">
+                </button>
+                <button class="life-line" id="powerPaplu" title="power paplu">
+                    <img src="images/power_paplu.png" alt="image of power paplu life line">
+                </button>
+            </div>
+            <div class="levels">
+                <div class="level level-1">1000 ₹</div>
+                <div class="level level-2">2000 ₹</div>
+                <div class="level level-3">3000 ₹</div>
+                <div class="level level-4">5000 ₹</div>
+                <div class="level level-5">10000 ₹</div>
+                <div class="level level-6">20000 ₹</div>
+                <div class="level level-7">40000 ₹</div>
+                <div class="level level-8">80000 ₹</div>
+                <div class="level level-9">160000 ₹</div>
+                <div class="level level-10">320000 ₹</div>
+                <div class="level level-11">640000 ₹</div>
+                <div class="level level-12">1250000 ₹</div>
+                <div class="level level-13">2500000 ₹</div>
+                <div class="level level-14">5000000 ₹</div>
+                <div class="level level-15">10000000 ₹</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

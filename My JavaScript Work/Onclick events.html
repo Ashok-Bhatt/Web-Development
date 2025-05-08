@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using events in JavaScript</title>
+</head>
+<body>
+    <script>
+        function add(x,y) {      // add function is used to add two invoked numbers
+        document.write(x+y)
+        }
+        function over(){
+            document.write("This button is used to add the two number.")
+        }
+        function out(){
+            document.write("Please! Read the instructions carefully.")
+        }
+    </script>
+    <p onmouseover="over()">The sum of 4 and 6 is given by:</p>
+    <form>
+        <input type="button"value="add"onclick="add(4,6)"onmouseout="out()">
+    </form>
+</body>
+</html>

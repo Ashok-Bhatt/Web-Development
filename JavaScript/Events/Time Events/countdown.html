@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="timer">10</h1>
+    </div>
+    <script>
+        const timeDisplay = document.getElementById("timer");
+        let countdown;
+        let time = 10;
+        
+        startCountdown = () => {
+            time--;
+            timeDisplay.textContent = time;
+            if (time==0){
+                clearInterval(countdown);
+            }
+        }
+
+        window.addEventListener("DOMContentLoaded", ()=>{
+            countdown = setInterval(startCountdown, 1000);
+        })
+    </script>
+</body>
+</html>

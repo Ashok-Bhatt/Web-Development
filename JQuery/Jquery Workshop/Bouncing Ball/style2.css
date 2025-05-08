@@ -1,0 +1,48 @@
+.container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: 5px solid rgb(28, 24, 32);
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#ball1 {
+    background-color: rgb(89, 27, 122);
+    left: 250px;
+    transform: translateX(-50%);
+    animation-name: bounce1;
+}
+
+#ball2 {
+    background-color: rgb(177, 12, 0);
+    top: 225px;
+    animation-name: bounce2;
+}
+
+@keyframes bounce1 {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 450px;
+    }
+}
+
+@keyframes bounce2 {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: 450px;
+    }
+}

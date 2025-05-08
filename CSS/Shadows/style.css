@@ -1,0 +1,13 @@
+h1{
+    /* text-shadow: horizontal offset, vertical offset, blurness, color; */
+    text-shadow: 2px 2px 3px;
+}
+
+p{
+    font-size: 2em;
+    text-shadow: 2px 2px red, -2px -2px blue;
+    height : 400px;
+    width : 400px;
+    background-color: antiquewhite;
+    box-shadow: 3px 6px 5px green;
+}

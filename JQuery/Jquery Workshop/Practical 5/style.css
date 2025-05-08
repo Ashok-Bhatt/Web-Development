@@ -1,0 +1,36 @@
+.container{
+    border: 1px solid #bcbcbc;
+    padding: 25px;
+}
+
+.my-card{
+    display: flex;
+    justify-content: center;
+}
+
+#ImgBox{
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    height: 570px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+.chatbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-info{
+    padding: 10px;
+    background-color: lightskyblue;
+    color: black;
+    border: none;
+    margin-top: 20px;
+}

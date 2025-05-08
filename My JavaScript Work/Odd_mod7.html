@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript"type="text/javascript">
+        function odd_mod7(){
+            let num=Number.parseInt(document.getElementById("number").value)
+            let array_num=[]
+            if (num<=0){
+                document.getElementById("array").innerHTML="The number of elements cannot be zero or negative number."
+            }
+            else{
+                for (let i=0; i<num; i++){
+                array_num[i]=7+(i*14);
+            }
+            document.getElementById("array").innerHTML=array_num;
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="number">Enter the number N:</label><br>
+    <input type="text" placeholder="Enter number:" id="number" name="number">
+    <button onclick="odd_mod7()">Click here</button><br>
+    <p id="array"></p>
+</body>
+</html>

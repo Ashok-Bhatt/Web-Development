@@ -1,0 +1,40 @@
+.images {
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    margin: 2%;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-button:hover {
+    background-color: #1565dc;
+}
+
+.footer {
+    background-color: rgb(18, 207, 40);
+}

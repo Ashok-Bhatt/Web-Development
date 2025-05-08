@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            function prime(){
+                let num1 = Number.parseInt(document.getElementById("num1").value)
+                let num2 = Number.parseInt(document.getElementById("num2").value)
+                let ind = 0
+                let arr = []
+                if(num1>num2){
+                    document.getElementById("ans").innerHTML = "1st Number should be greater than 2nd Number "
+                }
+                else{
+                    for(let i=num1;i<=num2;i++){
+                        for(let x=2;x<=i;x++){
+                            if((i%x==0 || i==1) && x!=i ){
+                                break
+                            }
+                            else if(x==i){
+                                arr[ind]=i;
+                                ind += 1;
+                            }
+                            else{
+                                continue
+                            }
+                        }
+                    }
+                    document.getElementById("ans").innerHTML="prime numbers are :"+"<br/>"+"{"+arr+"}";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="num1">Enter the 1st number :</label><br/>
+            <input type="text" placeholder="Enter here" maxlength="10" value="" id="num1"/><br/></br>
+            <label for="num2">Enter the 2nd number :</label><br/>
+            <input type="text" placeholder="Enter here" maxlength="10" value="" id="num2"/><br/></br>
+            <input type="button" value="Submit" onclick="prime()"/>&nbsp;&nbsp;&nbsp;<input type="reset" value="clear"/><br/>
+            <p id="ans"></p>
+        </form>
+    </body>
+</html>

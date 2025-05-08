@@ -1,0 +1,24 @@
+1. Difference between null and undefined ?
+
+---> var home = null;
+     console.log(home);             // home
+     console.log(typeof(home));     // object      <------ bug: null cant't be an object
+
+     var home1;
+     console.log(home1);            // undefined
+     console.log(typeof(home1));    // undefined
+
+
+
+2. What is NaN ?
+
+---> NaN is a property of the global object
+     In other words, it is a variable in global scope
+     The initial value of NaN is Not-A-Number
+
+     var myPhoneNumber = 9876543210;
+     var myName = "thapa technical";
+
+     if (isNaN(myName)){
+        console.log("Please! Enter Valid Phone Number.)
+     }

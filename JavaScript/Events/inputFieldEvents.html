@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Field Events</title>
+</head>
+<body>
+    <input type="text" onkeypress="keyPressed()" onkeydown="keyDowned()" onkeyup="keyUped()">
+    <p id="para"></p>
+    <label for="ice-cream"></label>
+    <select name="ice-cream" id="ice-cream" onChange="selectElement()">
+        <option value="chocolate">Chocolate</option>
+        <option value="vanilla" selected>Vanilla</option>
+        <option value="strawBerry">Strawberry</option>
+    </select>
+      
+    <script>
+        const para1 = document.getElementById("para");
+
+        function keyDowned(){
+            para1.textContent = `Key Down`;
+        }
+
+        function keyUped(){
+            para1.textContent = `Key Up`;
+        }
+
+        function keyPressed(){
+            para1.textContent = `Key Pressed : ${event.key}        Key Code: ${event.code}`;
+        }
+
+        function selectElement(){
+            let iceCreamName = document.getElementById("ice-cream").value;
+            para1.textContent = `Selected Ice Cream : ${iceCreamName}`;
+        }
+    </script>
+</body>
+</html>

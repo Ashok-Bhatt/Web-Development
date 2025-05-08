@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Array Elements</title>
+    <script>
+        function generation(){
+            let array_input=[1,3,6,2,7,8];
+            document.getElementById("input").innerHTML="The input array is:"+array_input;
+            let array_output=array_input.sort()
+            document.getElementById("output").innerHTML="The output array is:"+array_output;
+        }
+    </script>
+</head>
+<body onload="generation()">
+    <p id="input"></p>
+    <p id="output"></p>
+</body>
+</html>

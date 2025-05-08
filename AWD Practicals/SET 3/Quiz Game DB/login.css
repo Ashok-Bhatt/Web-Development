@@ -1,0 +1,142 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, white, lightblue);
+}
+
+.login-page{
+    height: 500px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    border: 1px solid #a8d3e4;
+}
+
+.toggle-container{
+    height: 10%;
+    display: flex;
+}
+
+.option{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 20px;
+    width: calc(100% / 3);
+    text-align: center;
+    line-height: 50px;
+}
+
+.login-container{
+    background-color: #eeeeee;
+    border-bottom: 2px solid black;
+}
+
+form{
+    height: 90%;
+    padding: 25px 10px;
+    overflow-y: auto;
+}
+
+.entry-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 75%;
+}
+
+.field{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+
+label{
+    color: rgb(139, 139, 139);
+    font-size: 30px;
+}
+
+input{
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid rgb(53, 53, 53);
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.btn-container{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container button{
+    height: 50px;
+    width: 150px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px black;
+    border-radius: 25px;
+}
+
+#login-btn{
+    background-color: #00ff00;
+}
+
+#signIn-btn{
+    background-color: #0000ff;
+}
+
+.hidden-component{
+    display: none;
+}
+
+.score-container{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.entries{
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    background-color: rgb(46, 46, 46);
+}
+
+.header, .entry{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid white;
+    gap: 2px;
+}
+
+.header{
+    background-color: rgb(19, 18, 18);
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.usernameEntry, .highScoreEntry, .usernameHeader, .highScoreHeader{
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.usernameEntry, .highScoreEntry{
+    font-size: 20px;
+}

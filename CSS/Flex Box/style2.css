@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+}
+
+.item{
+    height: 200px;
+    width: 200px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(240, 96, 120);
+    border: 8px solid rgb(202, 12, 41);
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+}
+
+/*
+.item2{
+    flex-grow: 1;
+}
+
+.item3{
+    flex-basis: 300px;
+}
+
+.item1{
+    flex-shrink: 0;
+}
+*/
+
+/* Shorthand for flex-grow, flex-basis, flex-shrink
+Takes three parameters: 1.grow      2.shrink    3.basis*/
+
+.item2{
+    /* flex: 1; */
+    /* align-self: center; */
+    order: -1;
+}
+

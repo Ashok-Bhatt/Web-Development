@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+}
+
+.item{
+    height: 200px;
+    width: 200px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(240, 96, 120);
+    border: 8px solid rgb(202, 12, 41);
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    
+    /* flex-direction: column; */
+    flex-direction: row;
+
+    /* 
+    justify content: (x-axis)
+    flex-start, flex-end, center, space-between, space-around, space-evenly
+    */
+    justify-content: space-evenly;
+
+    /*     
+    align-items: (y-axis)
+    baseline, flex-start, flex-end, center 
+    */
+    /* align-items: center; */
+
+    flex-wrap: wrap;
+
+    /*align-content will work only when flex-wrap is wrap */
+    /* align-content: space-between; */
+
+    gap: 1em;
+    
+
+}

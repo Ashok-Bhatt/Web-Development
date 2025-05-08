@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <p>Want to know my name?</p>
+            <p id="showMyName"></p>
+            <br>
+            <button id="btn">Click Here</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        const btn1 = document.getElementById("btn");
+        const cancel = document.getElementById("cancel");
+        const para1 = document.getElementById("showMyName");
+
+        let start;
+        
+        showName = () => {
+            para1.textContent = "Ashok";
+        }
+
+        btn1.addEventListener("click", ()=>{
+            para1.textContent = "Loading...";
+            start = setTimeout(showName, 2000);
+        })
+
+        cancel.addEventListener("click", ()=>{
+            clearTimeout(start);
+        })
+    </script>
+</body>
+</html>

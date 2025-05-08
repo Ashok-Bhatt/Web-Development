@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByid program</title>
+    <script>
+        function greeting(){
+            // add_numbers program is used to add two numbers
+            let txt = "Hello sir!<br>How are you?<br>Hope you are fine."
+            return txt
+            document.getElementById("click").innerHTML(greeting());
+        }
+    </script>
+</head>
+<body>
+    <p>Click the below button to get your free greeting message</p><br>
+    <button onclick="greeting()" value="Click Here" size="20"></button><br>
+    <p id="click"></p>
+</body>
+</html>

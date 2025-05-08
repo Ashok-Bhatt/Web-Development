@@ -1,0 +1,47 @@
+#passmsg {
+    color: red;
+}
+#invalid_email{
+    color: red;
+}
+
+.text-class{
+    text-align: center;
+}
+
+.mt-4{
+    width: 900px;
+    display: flex;
+}
+
+.mt-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exceeded {
+    color: red;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: 3px solid #131111;
+    margin:20px
+}
+
+body {
+    padding: auto;
+    background-color: aliceblue;
+}
+
+.form-control {
+    width: 100%;
+}

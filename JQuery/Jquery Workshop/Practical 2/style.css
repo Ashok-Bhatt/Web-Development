@@ -1,0 +1,12 @@
+.container{
+    border: 1px solid #afafaf;
+    padding: 10px;
+}
+
+.button .btn{
+    background-color: crimson;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}

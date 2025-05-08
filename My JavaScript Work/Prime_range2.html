@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding the prime numbers between two numbers</title>
+    <script type="text/javascript">
+        function prime_number() {
+            let num1=Number.parseInt(document.getElementById("number1").value)
+            let num2=Number.parseInt(document.getElementById("number2").value)
+            let index=0
+            let arr=[]
+
+            if (num1>num2){
+                document.getElementById("prime_array").innerHTML="The second number should be greater than the first one.";
+            }
+            else {
+                for (let i=num1; i<=num2; i++){
+                    for (let j=2; j<=i; j++){
+                        if ((i%j==0 || i==1) && j!=i){
+                            break
+                        }
+                        else if(j==i){
+                            arr[index]=i;
+                            index++;
+                        }
+                        else {
+                            continue
+                        }
+                    }
+                }
+                document.getElementById("prime_array").innerHTML="The prime numbers between "+num1+" and "+num2+" are:<br>"+ arr ;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="number1">Enter the first number:</label><br>
+        <input type="text" placeholder="Enter 1st number:" value="" id="number1" name="number1" maxlength="4"><br><br>
+        <label for="number2">Enter the second number:</label><br>
+        <input type="text" placeholder="Enter 2nd number:" value="" id="number2" name="number2" maxlength="4"><br><br>
+        <input type="button" onclick="prime_number()" id="submit" value="Submit">
+        <input type="reset" value="Clear"><br>
+        <p id="prime_array"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Prime numbers in JavaScript</title>
+    <script type="text/javascript">
+        var prime_list=[];
+        function prime_range(){
+            num=getElementById("num1");
+            num=parseInt(num);
+            for (let i=parseInt(2);i<=num;i++){
+                for (let j=parseInt(2);j<i;j++){
+                    if (i%j==0){
+                        break;
+                    }
+                else{
+                    prime_list.push(i)
+                }
+                }
+            }
+        }
+        document.getElementById("demo").innerHTML=num;
+    </script>
+</head>
+<body>
+    <p>Prime numbers from given range.</p>
+    <label for="num1">Enter Number 1:</label><br>
+    <input type="text"name="num1"id="num1"><br><br>
+    <button onclick="prime_range()">Click</button>
+    <p id="demo"></p>
+</body>
+</html>
