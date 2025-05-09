@@ -1,0 +1,78 @@
+.form_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form_component{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+    align-items: center;
+}
+
+.image_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 500px;
+}
+
+.image_container img{
+    width: 100%;
+}
+
+.button_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    height: 100px;
+}
+
+.long_button{
+    width: 510px !important;
+}
+
+.form_control{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.form_label{
+    position: absolute;
+    background-color: white;
+    top: -5px;
+    left: 15px;
+}
+
+.form_input{
+    height: 30px;
+    width: 400px;
+    padding: 2px 10px;
+    margin: 5px 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.description_box{
+    padding-top: 5px;
+    height: 100px !important;
+    font-size: 15px !important
+}
+
+.submit_button{
+    align-self:self-end;
+    margin: 0px 10px;
+    padding: 5px 25px !important;
+    width: auto !important;
+    cursor: pointer;
+}
+
+.form_response{
+    color: #0fb10f;
+    align-self: flex-start;
+}

@@ -1,0 +1,10 @@
+.main-container{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,26 @@
+.currency-convertor-container{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.swap-button{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(71, 71, 242);
+    color: white;
+    border-radius: 5px;
+}

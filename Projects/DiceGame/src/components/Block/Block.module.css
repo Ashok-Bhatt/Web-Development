@@ -1,0 +1,19 @@
+.block, .selected_block{
+    height: 60px;
+    width: 60px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.block{
+    background-color: white;
+    color: black;
+}
+
+.selected_block{
+    background-color: black;
+    color: white;
+}

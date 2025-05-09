@@ -1,0 +1,32 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+    height: 70px;
+    width: 100%;
+}
+
+.logo_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+
+}

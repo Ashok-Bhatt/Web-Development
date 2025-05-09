@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7b257759a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="header">My Todos</div>
+        <div id="entry-container">
+            <form action="/addTask" method="POST">
+                <div>
+                    <label for="title-entry">Title</label>
+                    <input type="text" name="titleEntry" id="title-entry">
+                </div>
+                <div>
+                    <label for="description-entry">Description</label>
+                    <input type="text" name="descriptionEntry" id="description-entry">
+                </div>
+                <div>
+                    <button type="submit" id="submit-button">Add</button>
+                </div>
+            </form>
+        </div>
+        <div id="tasks-container">
+            <% tasks.forEach((task)=>{ %>
+                    <div class="task-block" id="task-<%= task._id %>">
+                        <div class="content">
+                            <div class="task-title"><%= task.title %></div>
+                            <div class="task-description"><%= task.description %></div>
+                        </div>
+                        <div class="button-container">
+                            <button class="delete-button" data-id="<%= task._id %>">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <% if (task.isTaskDone){ %>
+                                <button class="checked-button" data-id="<%= task._id %>">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                </button>
+                            <% } else { %>
+                                <button  class="unchecked-button" data-id="<%= task._id %>">
+                                    <i class="fa-solid fa-circle"></i>
+                                </button>
+                            <% } %>
+                        </div>
+                    </div>
+            <% }); %>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

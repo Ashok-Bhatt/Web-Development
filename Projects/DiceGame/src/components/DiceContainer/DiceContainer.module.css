@@ -1,0 +1,52 @@
+:root{
+    --dice-size: 150px;
+}
+
+.dice_container{
+    height: calc(100vh - 150px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dice{
+    height: var(--dice-size);
+    width: var(--dice-size);
+    background-color: white;
+    color: black;
+    border: 0;
+    font-size: var(--dice-size);
+    line-height: var(--dice-size);
+    text-align: center;
+}
+
+.reset_button, .reset_button{
+    height : 30px;
+    width: var(--dice-size);
+    font-size: 20px;
+}
+
+.show_rules_button{
+    height: 30px;
+    width: var(--dice-size);
+    font-size: 20px;
+}
+
+.rules_container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 233, 210);
+}
+
+.rules_list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
